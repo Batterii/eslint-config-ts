@@ -1,8 +1,5 @@
 module.exports = {
 	env: { mocha: true },
-	globals: {
-		expect: false, // global chai expect reference created by test setup.
-	},
 	rules: {
 		// Tests files may need to make stub classes,
 		// which don't need their own files.
