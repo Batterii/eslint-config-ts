@@ -1,0 +1,3 @@
+extends: ./base.js
+rules:
+    sort-keys: error
