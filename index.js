@@ -10,6 +10,9 @@ module.exports = {
 		'@typescript-eslint',
 	],
 	rules: Object.assign({}, replaced, {
-		'@typescript-eslint/explicit-member-accessibility': 'no-public',
+		'@typescript-eslint/explicit-member-accessibility': [
+			'error',
+			{ accessibility: 'no-public' },
+		],
 	}),
 };

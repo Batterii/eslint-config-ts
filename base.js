@@ -77,7 +77,11 @@ module.exports = {
 			'error',
 			'unix',
 		],
-		'lines-between-class-members': 'error',
+		'lines-between-class-members': [
+			'error',
+			'always',
+			{ exceptAfterSingleLine: true },
+		],
 		'max-classes-per-file': 'warn',
 		'max-len': 'error',
 		'max-statements-per-line': 'error',

@@ -1,11 +1,9 @@
 module.exports = {
 	env: { mocha: true },
 	rules: {
-		// Relax function return type rule to simplify mocha hook functions.
-		'@typescript-eslint/explicit-function-return-type': [
-			'warn',
-			{ allowExpressions: true },
-		],
+		// Allow test files to play more loosely with types.
+		'@typescript-eslint/explicit-function-return-type': 'off',
+		'@typescript-eslint/no-explicit-any': 'off',
 
 		// Tests files may need to make stub classes,
 		// which don't need their own files.
