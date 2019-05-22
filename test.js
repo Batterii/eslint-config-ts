@@ -3,7 +3,7 @@ module.exports = {
 	rules: {
 		// Relax function return type rule to simplify mocha hook functions.
 		'@typescript-eslint/explicit-function-return-type': [
-			'warning',
+			'warn',
 			{ allowExpressions: true },
 		],
 
