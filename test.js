@@ -1,5 +1,8 @@
 module.exports = {
 	env: { mocha: true },
+	globals: {
+		expect: false, // For global chai expect reference.
+	},
 	rules: {
 		// Allow test files to play more loosely with types.
 		'@typescript-eslint/explicit-function-return-type': 'off',
