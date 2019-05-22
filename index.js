@@ -9,5 +9,7 @@ module.exports = {
 	plugins: [
 		'@typescript-eslint',
 	],
-	rules: replaced,
+	rules: Object.assign({}, replaced, {
+		'@typescript-eslint/explicit-member-accessibility': 'no-public',
+	}),
 };
