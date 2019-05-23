@@ -6,7 +6,9 @@
   "license": "UNLICENSED",
   "repository": "github:Batterii/eslint-config",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lintf": "eslint . --fix",
+    "postversion": "git push && git push --tags"
   },
   "devDependencies": {
     "eslint": "^5.16.0"
