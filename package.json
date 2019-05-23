@@ -4,7 +4,7 @@
   "description": "ESLint Configuration for Batterii Typescript projects",
   "author": "Batterii, LLC",
   "license": "UNLICENSED",
-  "repository": "github:Batterii/eslint-config",
+  "repository": "github:Batterii/eslint-config-ts",
   "scripts": {
     "lint": "eslint .",
     "lintf": "eslint . --fix",
