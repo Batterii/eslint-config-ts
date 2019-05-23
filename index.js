@@ -1,7 +1,7 @@
-// Import base non-Typescript rules.
-const base = require('./base').rules;
+// Import base Node rules.
+const base = require('@batterii/eslint-config-node').rules;
 
-// List incompatible base rules to replace with their TypeScript equivalents.
+// List incompatible rules to replace with their TypeScript equivalents.
 const replacedRules = [
 	'camelcase',
 	'func-call-spacing',
@@ -24,7 +24,7 @@ for (const rule of replacedRules) {
 
 module.exports = {
 	extends: [
-		'./base.js',
+		'@batterii/eslint-config/node',
 		'plugin:@typescript-eslint/recommended',
 	],
 	parser: '@typescript-eslint/parser',
