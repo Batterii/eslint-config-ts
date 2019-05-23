@@ -24,7 +24,7 @@ for (const rule of replacedRules) {
 
 module.exports = {
 	extends: [
-		'@batterii/eslint-config/node',
+		'@batterii/eslint-config-node',
 		'plugin:@typescript-eslint/recommended',
 	],
 	parser: '@typescript-eslint/parser',
