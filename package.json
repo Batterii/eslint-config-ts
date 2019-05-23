@@ -5,6 +5,11 @@
   "author": "Batterii, LLC",
   "license": "UNLICENSED",
   "repository": "github:Batterii/eslint-config-ts",
+  "files": [
+    "index.js",
+    "test.js",
+    "base.js"
+  ],
   "scripts": {
     "lint": "eslint .",
     "lintf": "eslint . --fix",
