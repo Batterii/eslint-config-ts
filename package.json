@@ -1,7 +1,7 @@
 {
   "name": "@batterii/eslint-config-ts",
   "version": "0.0.10",
-  "description": "ESLint Configuration for Batterii Typescript projects",
+  "description": "ESLint Configuration for Batterii TypeScript projects",
   "author": "Batterii, LLC",
   "license": "UNLICENSED",
   "repository": "github:Batterii/eslint-config-ts",
@@ -12,7 +12,9 @@
   "scripts": {
     "lint": "eslint .",
     "lintf": "eslint . --fix",
-    "postversion": "git push && git push --tags"
+    "preversion": "npm run lint",
+    "postversion": "npm publish",
+    "prepublishOnly": "git push && git push --tags"
   },
   "devDependencies": {
     "eslint": "^5.16.0"
