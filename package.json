@@ -13,7 +13,6 @@
     "lint": "eslint .",
     "lintf": "eslint . --fix",
     "preversion": "npm run lint",
-    "postversion": "npm publish",
     "prepublishOnly": "git push && git push --tags"
   },
   "devDependencies": {
