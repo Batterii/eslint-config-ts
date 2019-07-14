@@ -47,6 +47,7 @@ module.exports = {
 			{ private: '^_' },
 		],
 		'@typescript-eslint/member-ordering': 'error',
+		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/no-extraneous-class': 'error',
 		'@typescript-eslint/no-for-in-array': 'warn',
 		'@typescript-eslint/no-require-imports': 'error',
