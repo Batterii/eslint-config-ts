@@ -62,5 +62,8 @@ module.exports = {
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/unbound-method': 'error',
 		'@typescript-eslint/unified-signatures': 'error',
+
+		// Dupe class members are needed for overloads, so turn this off.
+		'no-dupe-class-members': 'off',
 	}),
 };
