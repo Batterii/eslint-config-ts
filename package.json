@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "description": "ESLint Configuration for Batterii TypeScript projects",
   "author": "Batterii, LLC",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "repository": "github:Batterii/eslint-config-ts",
   "files": [
     "index.js",
