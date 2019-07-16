@@ -37,6 +37,10 @@ module.exports = {
 	// Merge any additional Typescript-specific rules with replacement rules.
 	rules: Object.assign({}, replacement, {
 		'@typescript-eslint/ban-ts-ignore': 'error',
+		'@typescript-eslint/explicit-function-return-type': [
+			'error',
+			{ allowExpressions: true },
+		],
 		'@typescript-eslint/explicit-member-accessibility': [
 			'error',
 			{ accessibility: 'no-public' },
