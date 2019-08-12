@@ -3,7 +3,9 @@ module.exports = {
 	rules: {
 		// Allow test files to play more loosely with types.
 		'@typescript-eslint/explicit-function-return-type': 'off',
-		'@typescript-eslint/no-explicit-any': 'off',
+
+		// Unit tests may need unbound method references for sinon.
+		'@typescript-eslint/unbound-method': 'off',
 
 		// Tests files may need to make stub classes,
 		// which don't need their own files.
