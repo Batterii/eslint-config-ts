@@ -7,8 +7,10 @@ module.exports = {
 		// Unit tests may need unbound method references for sinon.
 		'@typescript-eslint/unbound-method': 'off',
 
-		// Tests files may need to make stub classes,
-		// which don't need their own files.
+		/*
+		 * Tests files may need to make stub classes,
+		 * which don't need their own files.
+		 */
 		'max-classes-per-file': 'off',
 
 		// Allow test declarations to exceed max line length.
