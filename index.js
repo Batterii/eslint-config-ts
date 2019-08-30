@@ -63,7 +63,10 @@ module.exports = {
 		'@typescript-eslint/prefer-includes': 'error',
 		'@typescript-eslint/prefer-regexp-exec': 'error',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
-		'@typescript-eslint/promise-function-async': 'error',
+		'@typescript-eslint/promise-function-async': [
+			'error',
+			{ checkArrowFunctions: false },
+		],
 		'@typescript-eslint/require-await': 'error',
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/unbound-method': 'error',
