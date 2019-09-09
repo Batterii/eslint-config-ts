@@ -4,6 +4,9 @@ module.exports = {
 		// Allow test files to play more loosely with types.
 		'@typescript-eslint/explicit-function-return-type': 'off',
 
+		// Allow type aliases in tests.
+		'@typescript-eslint/no-type-alias': 'off',
+
 		// Unit tests may need unbound method references for sinon.
 		'@typescript-eslint/unbound-method': 'off',
 
