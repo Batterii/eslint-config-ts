@@ -56,7 +56,6 @@ module.exports = {
 		'@typescript-eslint/no-for-in-array': 'warn',
 		'@typescript-eslint/no-misused-promises': 'error',
 		'@typescript-eslint/no-require-imports': 'error',
-		'@typescript-eslint/no-type-alias': 'warn',
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'@typescript-eslint/prefer-for-of': 'error',
