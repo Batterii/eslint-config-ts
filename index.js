@@ -66,7 +66,6 @@ module.exports = {
 			'error',
 			{ checkArrowFunctions: false },
 		],
-		'@typescript-eslint/require-await': 'error',
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'@typescript-eslint/unbound-method': 'error',
 		'@typescript-eslint/unified-signatures': 'error',
