@@ -1,6 +1,6 @@
 {
   "name": "@batterii/eslint-config-ts",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "ESLint Configuration for Batterii TypeScript projects",
   "author": "Batterii, LLC",
   "license": "MIT",
