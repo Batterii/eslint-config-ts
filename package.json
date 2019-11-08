@@ -7,7 +7,8 @@
   "repository": "github:Batterii/eslint-config-ts",
   "files": [
     "index.js",
-    "test.js"
+    "test.js",
+    "bin.js"
   ],
   "scripts": {
     "lint": "eslint .",
