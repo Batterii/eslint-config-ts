@@ -4,6 +4,9 @@ module.exports = {
 		// Allow test files to play more loosely with types.
 		"@typescript-eslint/explicit-function-return-type": "off",
 
+		// Allow non-null assertions in tests.
+		"@typescript-eslint/no-non-null-assertion": "off",
+
 		// Allow type aliases in tests.
 		"@typescript-eslint/no-type-alias": "off",
 
