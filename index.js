@@ -3,10 +3,10 @@ const base = require("@batterii/eslint-config-node").rules;
 
 // List incompatible rules to replace with their TypeScript equivalents.
 const replacedRules = [
-	"camelcase",
 	"func-call-spacing",
 	"indent",
 	"no-extra-parens",
+	"no-shadow",
 	"no-use-before-define",
 	"no-useless-constructor",
 	"semi",
@@ -36,7 +36,7 @@ module.exports = {
 	],
 	// Merge any additional Typescript-specific rules with replacement rules.
 	rules: Object.assign({}, replacement, {
-		"@typescript-eslint/ban-ts-ignore": "error",
+		"@typescript-eslint/ban-ts-comment": "error",
 		"@typescript-eslint/explicit-function-return-type": [
 			"error",
 			{allowExpressions: true},
@@ -45,12 +45,42 @@ module.exports = {
 			"error",
 			{accessibility: "no-public"},
 		],
-		"@typescript-eslint/generic-type-naming": ["error", "^T"],
-		"@typescript-eslint/member-naming": [
-			"error",
-			{private: "^_"},
-		],
 		"@typescript-eslint/member-ordering": "error",
+		"@typescript-eslint/naming-convention": [
+			"error",
+			/* eslint-disable sort-keys */
+			{
+				selector: "default",
+				format: ["camelCase", "PascalCase"],
+			},
+			{
+				selector: "parameter",
+				format: ["camelCase", "PascalCase"],
+				leadingUnderscore: "allow",
+			},
+			{
+				selector: "memberLike",
+				modifiers: ["private"],
+				format: ["camelCase"],
+				leadingUnderscore: "require",
+			},
+			{
+				selector: "memberLike",
+				modifiers: ["protected"],
+				format: ["camelCase"],
+				leadingUnderscore: "require",
+			},
+			{
+				selector: ["typeLike", "enumMember"],
+				format: ["PascalCase"],
+			},
+			{
+				selector: "typeParameter",
+				format: ["PascalCase"],
+				prefix: ["T"],
+			},
+			/* eslint-enable sort-keys */
+		],
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/no-extraneous-class": "error",
 		"@typescript-eslint/no-for-in-array": "warn",
@@ -69,6 +99,9 @@ module.exports = {
 		"@typescript-eslint/restrict-plus-operands": "error",
 		"@typescript-eslint/unbound-method": "error",
 		"@typescript-eslint/unified-signatures": "error",
+
+		// This has been replaced by naming-convention in typescrypt-eslint, so turn it off.
+		"camelcase": "off",
 
 		// Dupe class members are needed for overloads, so turn this off.
 		"no-dupe-class-members": "off",
