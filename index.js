@@ -77,7 +77,6 @@ module.exports = {
 			{
 				selector: "typeParameter",
 				format: ["PascalCase"],
-				prefix: ["T"],
 			},
 			/* eslint-enable sort-keys */
 		],
